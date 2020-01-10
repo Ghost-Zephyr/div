@@ -5,8 +5,10 @@ if [ $# -eq 0 ]; then
 else
 	FOLDER=$1
 fi
+echo "Listing files for conversion."
 MP4FILES=$(ls $FOLDER | grep .mp4)
 FILE=''
+echo "Converting mp4 files in directory $PWD to mp3..."
 for l in $MP4FILES
 do
 	case $l in
@@ -25,4 +27,5 @@ do
 		;;
 	esac
 done
+echo "done."
 echo "rm $PWD/*.mp4 to remove the videos!"
