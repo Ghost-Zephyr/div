@@ -25,4 +25,4 @@ do
 		;;
 	esac
 done
-
+echo "rm $PWD/*.mp4 to remove the videos!"
