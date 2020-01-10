@@ -6,7 +6,7 @@ else
 	FOLDER=$1
 fi
 echo "Listing files for conversion."
-MP4FILES=$(ls $FOLDER | grep .mp4)
+MP4FILES=$(ls '$FOLDER' | grep .mp4)
 FILE=''
 echo "Converting mp4 files in directory $PWD to mp3..."
 for l in $MP4FILES
