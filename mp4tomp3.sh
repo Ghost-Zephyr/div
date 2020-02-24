@@ -6,14 +6,18 @@ else
 	FOLDER=$1
 fi
 echo "Listing files for conversion."
-MP4FILES=$(ls '$FOLDER' | grep .mp4)
+MP4FILES=$(ls "$FOLDER" | grep .mp4)
 FILE=''
 echo "Converting mp4 files in directory $PWD to mp3..."
 for l in $MP4FILES
 do
 	case $l in
 		*.mp4)
-			FILE+=' '$l
+			if [ -z "$FILE" ]; then
+				FILE=$l
+			else
+				FILE+=' '$l
+			fi
 			NFILE=${FILE%.mp4}.mp3
 			ffmpeg -i "$FOLDER/$FILE" "$FOLDER/$NFILE" # -b:a 192K -vn
 			FILE=''
