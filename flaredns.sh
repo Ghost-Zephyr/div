@@ -11,7 +11,6 @@ if [ $(whoami) == "root" ]; then
 	dns
 else
 	echo 'Sorry, got to be root!'
-	exit 0
 fi
 
 
