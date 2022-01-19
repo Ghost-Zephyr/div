@@ -1,0 +1,40 @@
+{
+    "window.menuBarVisibility": "hidden",
+    "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}Best VSCode!",
+    "terminal.integrated.sendKeybindingsToShell": true,
+    "editor.fontFamily": "'hack nerd font', 'ubuntu mono nerd font', 'hack', 'ubuntu mono', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.tabSize": 2,
+    "editor.fontSize": 11,
+    "terminal.integrated.fontFamily": "'ubuntu mono nerd font', 'hack nerd font', 'hack', 'monospace', monospace, 'Droid Sans Mono', 'Droid Sans Fallback'",
+    "terminal.integrated.fontSize": 12,
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.colorTheme": "Runic Prismatic",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "python.terminal.activateEnvironment": false,
+    "python.pythonPath": "/usr/bin/pypy3",
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true,
+    "python.condaPath": "conda",
+    "go.gopath": "~/.go",
+    "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
+    "vscode-neovim.logLevel": "warn",
+    "vscode-neovim.neovimWidth": 2048,
+    "jshint.nodePath": "/home/siv/.npm/node_modules/jshint",
+    "jshint.lintHTML": true,
+    "bracket-pair-colorizer-2.showBracketsInGutter": true,
+    "bracket-pair-colorizer-2.colors": [
+        "Lime",
+        "LightSkyBlue",
+        "Orchid",
+        "Gold",
+        "Red"
+    ],
+    "bracket-pair-colorizer-2.scopeLineCSS": [
+        "borderStyle: solid",
+        "borderWidth: 1px",
+        "borderColor: {color}",
+        "opacity: 0.4"
+    ],
+    "explorer.confirmDelete": false
+}
